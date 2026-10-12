@@ -1,12 +1,14 @@
 -- ====================================================================
--- 👑 HP1 EXECUTOR LUXURY VEHICLE MENU (ملف إكزكيوتور شخصي شامل 100%)
--- تشغيل فوري عبر الإكزكيوتور (Load lua file -> Execute) أو وضعه بأي سكربت
--- عدد السيارات: 1,639 سيارة كاملة مستخرجة من السيرفر ومصنفة بدقة
--- زر فتح المنيو: F6 أو INSERT أو كتابة أمر /vmenu بالشات
+-- 👑 HP1 ROYAL LUXURY VEHICLE SHOWROOM (ملف إكزكيوتور شخصي 100%)
+-- تشغيل فوري ومستقل داخل أي إكزكيوتور (Space, RedEngine, Eulen, etc.)
+-- لا يتطلب سيرفر، لا يتطلب ريسورس، ولا يحتاج أي ملفات خارجية!
+-- عدد السيارات: 1,639 مركبة كاملة مع محرك بحث وأدوات صيانة متطورة
+-- زر الفتح: F6 أو INSERT أو كتابة أمر /vmenu بالشات
 -- ====================================================================
 
 local HP1 = {
-    Title = '👑 قائمة سيارات HP1 الملكية',
+    Title = '👑 HP1 ROYAL SHOWROOM',
+    SubTitle = 'EXECUTIVE VEHICLE VAULT [1,639 VEHICLES]',
     DeletePrevious = true,    -- حذف السيارة السابقة تلقائياً لمنع اللاق
     WarpInDriverSeat = true,  -- نقلك لكرسي السائق مباشرة
     MaxFuel = true,           -- تعبئة خزان الوقود 100%
@@ -20,11 +22,11 @@ local HP1 = {
 HP1.Categories = {
     {
         id = 'vip_packs',
-        title = '👑 حزم السيرفر الحصرية والـ VIP',
-        desc = 'حزم الرتب الفاخرة، البدر، الدايموند، أبو سلامة، والسيارات الحصرية',
+        title = '👑 VIP & Royal Exclusives (حزم السيرفر الحصرية)',
+        desc = 'Al-Badr, Diamond, Abu Salama, Al-Sryat & VIP Editions',
         subcategories = {
             {
-                title = '🇸🇦 فعاليات اليوم الوطني (National Day)',
+                title = '🇸🇦 National Day (فعاليات اليوم الوطني)',
                 count = 21,
                 vehicles = {
                     { model = 'm4_rb32024_ksa', label = 'اليوم الوطني - RB3 2024' },
@@ -51,7 +53,7 @@ HP1.Categories = {
                 }
             },
             {
-                title = '🌕 حزمة البدر الحصرية (Al-Badr Pack)',
+                title = '🌕 Al-Badr Pack (حزمة البدر الحصرية)',
                 count = 148,
                 vehicles = {
                     { model = '6rp424', label = '2026 رولز رايز كولينان' },
@@ -205,7 +207,7 @@ HP1.Categories = {
                 }
             },
             {
-                title = '🏎️ سيارات معدلة حصرية (Addon Cars)',
+                title = '🏎️ Addon Custom Cars (سيارات معدلة حصرية)',
                 count = 24,
                 vehicles = {
                     { model = '745le', label = '745LE BMW' },
@@ -235,7 +237,7 @@ HP1.Categories = {
                 }
             },
             {
-                title = '💎 حزمة الدايموند (Diamond Pack)',
+                title = '💎 Diamond Pack (حزمة الدايموند)',
                 count = 107,
                 vehicles = {
                     { model = '6RP109', label = '2021 VXR قراند تورنق لاند', image = 'https://cdn.hp1rp.com/%D9%82%D8%B1%D8%A7%D9%86%D8%AF%20%D8%AA%D9%88%D8%B1%D9%86%D9%82%20%D9%84%D8%A7%D9%86%D8%AF%202021%20-%206RP109.png' },
@@ -348,7 +350,7 @@ HP1.Categories = {
                 }
             },
             {
-                title = '🔥 سيارات خاصة ومميزة (Special Cars)',
+                title = '🔥 Special Editions (سيارات خاصة ومميزة)',
                 count = 48,
                 vehicles = {
                     { model = 'm4_m4_accord2012_22017_2', label = '2017  أكـورد محمد العنزي' },
@@ -402,7 +404,7 @@ HP1.Categories = {
                 }
             },
             {
-                title = '🔮 حزمة داعمين النيترو (Nitro Boosters)',
+                title = '🔮 Nitro Boosters (داعمين النيترو)',
                 count = 2,
                 vehicles = {
                     { model = 'VTCsre2', label = 'فـتـك' },
@@ -410,7 +412,7 @@ HP1.Categories = {
                 }
             },
             {
-                title = '🚗 حزمة السريات (Al-Sryat VIP)',
+                title = '🚗 Al-Sryat VIP (حزمة السريات)',
                 count = 19,
                 vehicles = {
                     { model = 'soso24s', label = '2024 سـونـاتـا', image = 'https://cdn.hp1rp.com/%D8%B3%D9%88%D9%86%D8%A7%D8%AA%D8%A7%202024%20-%20soso24s%20-%20%D8%AD%D9%80%D9%80%D9%80%D8%B2%D9%85%D9%80%D9%80%D9%80%D8%A9%20%D8%A7%D9%84%D8%B3%D9%80%D9%80%D8%B1%D9%8A%D9%80%D9%80%D8%A7%D8%AA..png' },
@@ -435,7 +437,7 @@ HP1.Categories = {
                 }
             },
             {
-                title = '🚙 حزمة أبو سلامة (Abu Salama Pack)',
+                title = '🚙 Abu Salama Pack (حزمة أبو سلامة)',
                 count = 67,
                 vehicles = {
                     { model = 'cm03', label = '2003 كامري جونيور', image = 'https://cdn.hp1rp.com/%D9%83%D8%A7%D9%85%D8%B1%D9%8A%20%D8%AC%D9%88%D9%86%D9%8A%D9%88%D8%B1%202003%20-%20cm03%20-%20%D8%AD%D9%80%D9%80%D8%B2%D9%85%D9%80%D9%80%D9%80%D8%A9%20%D8%A3%D8%A8%D9%80%D9%80%D9%80%D9%80%D9%88%20%D8%B3%D9%80%D9%80%D9%80%D9%84%D8%A7%D9%85%D9%80%D9%80%D9%80%D8%A9.png' },
@@ -511,11 +513,11 @@ HP1.Categories = {
     },
     {
         id = 'police_military',
-        title = '🚓 القطاعات الأمنية والعسكرية',
-        desc = 'أسطول الدوريات، المباحث، الشرطة العسكرية، والقوات الخاصة',
+        title = '🚓 Law Enforcement & Tactical (القطاعات الأمنية والعسكرية)',
+        desc = 'State Patrols, CID Investigation, Special Military Police',
         subcategories = {
             {
-                title = '⚔️ الشرطة العسكرية الخاصة (Military Police)',
+                title = '⚔️ Military Police (الشرطة العسكرية الخاصة)',
                 count = 16,
                 vehicles = {
                     { model = '3skreh5', label = 'إف جـي شـرطـة عـسـكـريـة', image = 'https://cdn.hp1rp.com/3skreh5%20-%20%D8%A7%D9%84%D9%80%D8%B4%D9%80%D8%B1%D8%B7%D9%80%D8%A9%20%D8%A7%D9%84%D9%80%D8%B9%D9%80%D8%B3%D9%80%D9%83%D9%80%D8%B1%D9%8A%D9%80%D8%A9%20%D8%A7%D9%84%D9%80%D8%AE%D9%80%D8%A7%D8%B5%D9%80%D8%A9%20%E2%9A%94%EF%B8%8F.png' },
@@ -537,7 +539,7 @@ HP1.Categories = {
                 }
             },
             {
-                title = '🔍 المباحث العامة والتحري (Investigation & CID)',
+                title = '🔍 CID & Investigation (المباحث العامة والتحري)',
                 count = 13,
                 vehicles = {
                     { model = 'm4_accent2018', label = 'اكسنت 2018' },
@@ -565,7 +567,7 @@ HP1.Categories = {
                 }
             },
             {
-                title = '🚔 أسطول الدوريات والشرطة (Police & Patrols)',
+                title = '🚔 Police Patrol Fleet (أسطول الدوريات والشرطة)',
                 count = 301,
                 vehicles = {
                     { model = 'fj16m', label = '(سفتي أحمر) اف جي 2016', image = 'https://cdn.hp1rp.com/%D8%A7%D9%81%20%D8%AC%D9%8A%202016%20%3D%20fj16m.png' },
@@ -872,7 +874,7 @@ HP1.Categories = {
                 }
             },
             {
-                title = '🚨 الإسعاف والطوارئ الطبية (EMS & Ambulance)',
+                title = '🚨 EMS & Ambulances (الإسعاف والطوارئ الطبية)',
                 count = 30,
                 vehicles = {
                     { model = 'policeold2', label = 'Albany Police Roadcruiser' },
@@ -908,7 +910,7 @@ HP1.Categories = {
                 }
             },
             {
-                title = '🪖 آليات ومدرعات حربية (Military Vehicles)',
+                title = '🪖 Armored & War Machines (آليات ومدرعات حربية)',
                 count = 18,
                 vehicles = {
                     { model = 'terbyte', label = 'Benefactor Terrorbyte' },
@@ -935,11 +937,11 @@ HP1.Categories = {
     },
     {
         id = 'drift_offroad',
-        title = '🏜️ الهجولة والنفود والتطعيس والتهريب',
-        desc = 'مرهمات HP1، سيارات التهريب، وسيارات النفود والدفع الرباعي',
+        title = '🏜️ Desert Off-Road & Dunes (الهجولة والنفود والتطعيس)',
+        desc = 'HP1 Tuned Rigs, Safari 4x4, Desert Trophy Trucks',
         subcategories = {
             {
-                title = '⛳ مرهمات ونفود HP1 (Tuned Off-Road)',
+                title = '⛳ HP1 Tuned Dunes (مرهمات ونفود HP1)',
                 count = 81,
                 vehicles = {
                     { model = 'tundra11', label = '2011 تـندرا', image = 'https://cdn.hp1rp.com/%D8%AA%D9%86%D8%AF%D8%B1%D8%A7%20-%20tundra11%20-%20%D8%AD%D9%80%D9%80%D8%B2%D9%85%D9%80%D9%80%D9%80%D8%A9%20HP1%20%D9%84%D9%80%D9%80%D9%84%D9%80%D9%80%D8%AA%D9%80%D9%80%D9%87%D9%80%D9%80%D8%B1%D9%8A%D9%80%D9%80%D8%A8.png' },
@@ -1072,8 +1074,8 @@ HP1.Categories = {
     },
     {
         id = 'civilian',
-        title = '✨ سيارات المواطنين والسيدان اليومية',
-        desc = 'سيارات المواطنين، سيدان، سيارات مدمجة، وجيوب عائلية',
+        title = '✨ Executive & Daily Sedans (المواطنين والسيدان اليومية)',
+        desc = 'Luxury Sedans, Daily Cruisers, Compacts & SUVs',
         subcategories = {
             {
                 title = '✨〢حـزمـة الـمـواطـنـيـن',
@@ -1241,8 +1243,8 @@ HP1.Categories = {
     },
     {
         id = 'sports_super',
-        title = '⚡ السيارات الرياضية والخارقة',
-        desc = 'سوبر كار، سيارات رياضية، عضلات، وكوبيه فارهة',
+        title = '⚡ Motorsport & Hypercars (السيارات الرياضية والخارقة)',
+        desc = 'Exotic Supercars, High-Performance Track Cars & Muscle',
         subcategories = {
             {
                 title = 'سيارات openwheel',
@@ -1583,8 +1585,8 @@ HP1.Categories = {
     },
     {
         id = 'bikes',
-        title = '🏍️ الدراجات النارية والهوائية',
-        desc = 'دراجات نارية سريعة، كلاسيكية، ودراجات هوائية',
+        title = '🏍️ Superbikes & Cycles (الدراجات النارية والهوائية)',
+        desc = 'High-Speed Sportbikes, Choppers, ATVs & Cycles',
         subcategories = {
             {
                 title = '🏍️ دراجات نارية (Motorcycles)',
@@ -1668,8 +1670,8 @@ HP1.Categories = {
     },
     {
         id = 'aviation',
-        title = '✈️ الطائرات والمروحيات',
-        desc = 'طائرات مروحية (هليكوبتر)، نفاثة، وطائرات شحن',
+        title = '✈️ Aviation & Rotorcraft (الطائرات والمروحيات)',
+        desc = 'Tactical Helicopters, Private Jets & Cargo Aircraft',
         subcategories = {
             {
                 title = '✈️ طائرات (Planes)',
@@ -1754,8 +1756,8 @@ HP1.Categories = {
     },
     {
         id = 'marine',
-        title = '🚤 القوارب واليخوت البحرية',
-        desc = 'قوارب سريعة، يخوت فاخرة، ودبابات بحرية',
+        title = '🚤 Luxury Marine & Yachts (القوارب واليخوت البحرية)',
+        desc = 'Speedboats, Luxury Motor Yachts & Watercraft',
         subcategories = {
             {
                 title = '🚤 قوارب ويخوت (Boats)',
@@ -1789,8 +1791,8 @@ HP1.Categories = {
     },
     {
         id = 'commercial_utility',
-        title = '🚛 الشاحنات والمعدات والنقل العام',
-        desc = 'شاحنات نقل، حافلات وفان، مركبات ثقيلة، وسيارات خدمة عامة',
+        title = '🚛 Commercial & Heavy Duty (الشاحنات والمعدات والنقل)',
+        desc = 'Heavy Haulers, Industrial Trucks & Public Transit Fleet',
         subcategories = {
             {
                 title = '🚐 فان وشاحنات صغيرة (Vans)',
@@ -1831,7 +1833,7 @@ HP1.Categories = {
                 }
             },
             {
-                title = '🚓 مركبات أمنية خاصة (Special Ops Vehicles)',
+                title = '🚓 Special Ops Tactical (مركبات أمنية خاصة)',
                 count = 22,
                 vehicles = {
                     { model = 'jrgxr37rs', label = 'ادارة عليا' },
@@ -3593,7 +3595,7 @@ HP1.Lookup = {
 }
 
 -- ====================================================================
--- 🛠️ الوظائف المساعدة والتنزيل المباشر
+-- 🛠️ دوال التنزيل والصيانة وأدوات المركبة
 -- ====================================================================
 local function Notify(msg)
     SetNotificationTextEntry('STRING')
@@ -3624,10 +3626,10 @@ local function SpawnVehicleDirect(model, label)
     local h = GetEntityHeading(ped)
     local hash = GetHashKey(model)
 
-    Notify('~y~جاري تنزيل: ' .. label .. '...~s~')
+    Notify('~y~[HP1] DEPLOYING: ~s~' .. label .. '...')
 
     if not SafeLoadModel(hash) then
-        Notify('~r~خطأ: تعذر تحميل موديل المركبة: ' .. model .. '~s~')
+        Notify('~r~[HP1] ERROR: MODEL NOT FOUND: ' .. model .. '~s~')
         PlaySound('ERROR')
         return
     end
@@ -3640,7 +3642,7 @@ local function SpawnVehicleDirect(model, label)
 
     local veh = CreateVehicle(hash, c.x, c.y, c.z, h, true, false)
     if not DoesEntityExist(veh) then
-        Notify('~r~فشل في إنشاء المركبة.~s~')
+        Notify('~r~[HP1] ERROR: FAILED TO CREATE VEHICLE.~s~')
         SetModelAsNoLongerNeeded(hash)
         return
     end
@@ -3650,132 +3652,127 @@ local function SpawnVehicleDirect(model, label)
     SetEntityAsMissionEntity(veh, true, true)
     SetVehicleHasBeenOwnedByPlayer(veh, true)
     SetVehicleNeedsToBeHotwired(veh, false)
-    SetVehicleOnGroundProperly(veh)
 
-    local plate = 'HP1 ' .. math.random(1000, 9999)
-    SetVehicleNumberPlateText(veh, plate)
+    local plate = GetVehicleNumberPlateText(veh)
+    TriggerEvent('vehiclekeys:client:SetOwner', plate)
+    TriggerEvent('qb-vehiclekeys:client:AddKeys', plate)
 
     if HP1.WarpInDriverSeat then
         TaskWarpPedIntoVehicle(ped, veh, -1)
+    end
+
+    if HP1.MaxFuel then
+        SetVehicleFuelLevel(veh, 100.0)
+        DecorSetFloat(veh, '_FUEL_LEVEL', 100.0)
+        TriggerEvent('LegacyFuel:client:SetFuel', veh, 100.0)
     end
 
     if HP1.EngineAlwaysOn then
         SetVehicleEngineOn(veh, true, true, false)
     end
 
-    SetVehicleFuelLevel(veh, 100.0)
-
-    -- محاولة إعطاء مفاتيح QBCore إذا كانت موجودة
-    pcall(function()
-        TriggerEvent('vehiclekeys:client:SetOwner', plate)
-    end)
-
-    Notify('~g~تم تنزيل ' .. label .. ' بنجاح!~s~')
-    PlaySound('PURCHASE')
     SetModelAsNoLongerNeeded(hash)
+    Notify('~g~[HP1] DEPLOYED:~s~ ' .. label .. ' ~y~(' .. model .. ')~s~')
+    PlaySound('PURCHASE')
 end
 
--- تصليح كامل
+-- أدوات الصيانة
 local function RepairVehicle()
     local ped = PlayerPedId()
     local veh = GetVehiclePedIsIn(ped, false)
-    if veh == 0 then veh = HP1.CurrentVeh end
+    if not veh or veh == 0 then veh = HP1.CurrentVeh end
     if veh and DoesEntityExist(veh) then
         SetVehicleFixed(veh)
-        SetVehicleDirtLevel(veh, 0.0)
         SetVehicleDeformationFixed(veh)
         SetVehicleUndriveable(veh, false)
-        SetVehicleEngineOn(veh, true, true, false)
         SetVehicleEngineHealth(veh, 1000.0)
+        SetVehicleBodyHealth(veh, 1000.0)
         SetVehiclePetrolTankHealth(veh, 1000.0)
-        Notify('~g~تم تصليح المركبة بالكامل وتنظيفها 🔧~s~')
-        PlaySound('CONFIRM')
+        SetVehicleDirtLevel(veh, 0.0)
+        Notify('~g~[HP1] FULL REPAIR COMPLETE (100%) 🔧~s~')
+        PlaySound('PURCHASE')
     else
-        Notify('~r~يجب أن تكون داخل مركبة لتصليحها.~s~')
+        Notify('~r~[HP1] MUST BE INSIDE A VEHICLE~s~')
     end
 end
 
--- تنظيف وغسيل
 local function CleanVehicle()
     local ped = PlayerPedId()
     local veh = GetVehiclePedIsIn(ped, false)
-    if veh == 0 then veh = HP1.CurrentVeh end
+    if not veh or veh == 0 then veh = HP1.CurrentVeh end
     if veh and DoesEntityExist(veh) then
         SetVehicleDirtLevel(veh, 0.0)
-        Notify('~g~تم تلميع وغسيل المركبة ✨~s~')
-        PlaySound('CONFIRM')
+        Notify('~g~[HP1] VEHICLE WASHED & DETAILED 🧼~s~')
+        PlaySound('SELECT')
     end
 end
 
--- تعديل انقلاب المركبة
 local function FlipVehicle()
     local ped = PlayerPedId()
     local veh = GetVehiclePedIsIn(ped, false)
-    if veh == 0 then veh = HP1.CurrentVeh end
+    if not veh or veh == 0 then veh = HP1.CurrentVeh end
     if veh and DoesEntityExist(veh) then
-        local c = GetEntityCoords(veh)
-        SetEntityCoords(veh, c.x, c.y, c.z + 0.6, false, false, false, true)
+        local r = GetEntityRotation(veh, 2)
+        SetEntityRotation(veh, 0.0, r.y, r.z, 2, true)
         SetVehicleOnGroundProperly(veh)
-        Notify('~g~تم تعديل وضعية المركبة 🔄~s~')
-        PlaySound('CONFIRM')
+        Notify('~g~[HP1] VEHICLE FLIPPED UPRIGHT 🔄~s~')
+        PlaySound('SELECT')
     end
 end
 
--- تزويد كامل للأداء
 local function MaxTuneVehicle()
     local ped = PlayerPedId()
     local veh = GetVehiclePedIsIn(ped, false)
-    if veh == 0 then veh = HP1.CurrentVeh end
+    if not veh or veh == 0 then veh = HP1.CurrentVeh end
     if veh and DoesEntityExist(veh) then
         SetVehicleModKit(veh, 0)
-        SetVehicleMod(veh, 11, GetNumVehicleMods(veh, 11) - 1, false) -- Engine
-        SetVehicleMod(veh, 12, GetNumVehicleMods(veh, 12) - 1, false) -- Brakes
-        SetVehicleMod(veh, 13, GetNumVehicleMods(veh, 13) - 1, false) -- Transmission
-        SetVehicleMod(veh, 15, GetNumVehicleMods(veh, 15) - 1, false) -- Suspension
-        SetVehicleMod(veh, 16, GetNumVehicleMods(veh, 16) - 1, false) -- Armor
-        ToggleVehicleMod(veh, 18, true)                               -- Turbo
-        SetVehicleTyresCanBurst(veh, false)
-        Notify('~g~تم تزويد وترقية أداء السيارة بالكامل 🚀~s~')
-        PlaySound('TOGGLE_ON')
+        SetVehicleMod(veh, 11, GetNumVehicleMods(veh, 11) - 1, false)
+        SetVehicleMod(veh, 12, GetNumVehicleMods(veh, 12) - 1, false)
+        SetVehicleMod(veh, 13, GetNumVehicleMods(veh, 13) - 1, false)
+        SetVehicleMod(veh, 15, GetNumVehicleMods(veh, 15) - 1, false)
+        SetVehicleMod(veh, 16, GetNumVehicleMods(veh, 16) - 1, false)
+        ToggleVehicleMod(veh, 18, true)
+        SetVehicleWindowTint(veh, 1)
+        Notify('~g~[HP1] MAX PERFORMANCE TUNE & TURBO APPLIED 🚀~s~')
+        PlaySound('PURCHASE')
     end
 end
 
--- حذف المركبة
-local function DeleteVehicleAction()
-    local ped = PlayerPedId()
-    local veh = GetVehiclePedIsIn(ped, false)
-    if veh == 0 then veh = HP1.CurrentVeh end
-    if veh and DoesEntityExist(veh) then
-        TaskLeaveVehicle(ped, veh, 0)
-        Wait(400)
-        SetEntityAsMissionEntity(veh, true, true)
-        DeleteVehicle(veh)
-        HP1.CurrentVeh = nil
-        Notify('~r~تم حذف المركبة 🗑️~s~')
-        PlaySound('CANCEL')
-    end
-end
-
--- دفعة سرعة / Speed Boost
 local function SpeedBoostVehicle()
     local ped = PlayerPedId()
     local veh = GetVehiclePedIsIn(ped, false)
-    if veh ~= 0 then
-        SetVehicleForwardSpeed(veh, GetEntitySpeed(veh) + 15.0)
-        Notify('~g~🚀 سبرنت سرعة!~s~')
-        PlaySound('TOGGLE_ON')
+    if veh and DoesEntityExist(veh) then
+        SetVehicleForwardSpeed(veh, GetEntitySpeed(veh) + 20.0)
+        Notify('~g~[HP1] NITROUS BOOST ENGAGED ⚡~s~')
+        PlaySound('PURCHASE')
+    end
+end
+
+local function DeleteVehicleAction()
+    local ped = PlayerPedId()
+    local veh = GetVehiclePedIsIn(ped, false)
+    if not veh or veh == 0 then veh = HP1.CurrentVeh end
+    if veh and DoesEntityExist(veh) then
+        SetEntityAsMissionEntity(veh, true, true)
+        DeleteVehicle(veh)
+        if veh == HP1.CurrentVeh then HP1.CurrentVeh = nil end
+        Notify('~y~[HP1] VEHICLE REMOVED 🗑️~s~')
+        PlaySound('DELETE')
+    else
+        Notify('~r~[HP1] NO VEHICLE FOUND~s~')
     end
 end
 
 -- ====================================================================
--- 🖥️ محرك المنيو النيتف الفاخر (Pure Native Luxury Drawing Engine)
+-- 👑 واجهة التحكم الملكية الفاخرة (NATIVE LUXURY ENGINE)
+-- تعمل في أي إكزكيوتور 100% بدون ريسورس ولا سيرفر وبدون أي لاق
 -- ====================================================================
 local MenuUI = {
     Open = false,
-    CurrentTab = 'main', -- 'main', 'category', 'vehicles', 'tools', 'search'
-    Selected = 1,
+    CurrentTab = 'main',
     CatIndex = 1,
     SubIndex = 1,
+    Selected = 1,
     Scroll = 0,
     MaxVisible = 10,
     SearchResults = {}
@@ -3797,8 +3794,8 @@ local function DrawTextRaw(txt, x, y, scale, r, g, b, a, font, rightAlign)
 end
 
 local function TriggerSearchKeyboard()
-    AddTextEntry('HP1_SEARCH_LABEL', 'اكتب اسم السيارة أو كود التنزيل:')
-    DisplayOnscreenKeyboard(1, 'HP1_SEARCH_LABEL', '', '', '', '', '', 30)
+    AddTextEntry('HP1_SEARCH_LABEL', 'SEARCH VEHICLE MODEL OR NAME (اسم أو كود السيارة):')
+    DisplayOnscreenKeyboard(1, 'HP1_SEARCH_LABEL', '', '', '', '', '', 35)
     while UpdateOnscreenKeyboard() == 0 do
         DisableAllControlActions(0)
         Wait(0)
@@ -3809,16 +3806,18 @@ local function TriggerSearchKeyboard()
         for mKey, v in pairs(HP1.Lookup) do
             if string.find(mKey, q, 1, true) or string.find(string.lower(v.label), q, 1, true) then
                 table.insert(MenuUI.SearchResults, v)
-                if #MenuUI.SearchResults >= 70 then break end
+                if #MenuUI.SearchResults >= 100 then break end
             end
         end
         if #MenuUI.SearchResults > 0 then
             MenuUI.CurrentTab = 'search'
             MenuUI.Selected = 1
             MenuUI.Scroll = 0
-            Notify('~g~تم العثور على ' .. #MenuUI.SearchResults .. ' سيارة مطابقة 🔍~s~')
+            Notify('~g~[HP1] FOUND ' .. #MenuUI.SearchResults .. ' MATCHING VEHICLES 🔍~s~')
+            PlaySound('SELECT')
         else
-            Notify('~y~لم يتم العثور على سيارات تطابق: ' .. q .. '~s~')
+            Notify('~y~[HP1] NO VEHICLES MATCHING: ' .. q .. '~s~')
+            PlaySound('ERROR')
         end
     end
 end
@@ -3830,7 +3829,6 @@ CreateThread(function()
         if MenuUI.Open then
             wait = 0
 
-            -- تعطيل أزرار الأسلحة أثناء المنيو
             DisableControlAction(0, 140, true)
             DisableControlAction(0, 141, true)
             DisableControlAction(0, 142, true)
@@ -3838,56 +3836,60 @@ CreateThread(function()
             DisableControlAction(0, 25, true)
 
             local posX = 0.81
-            local posY = 0.14
-            local width = 0.26
+            local posY = 0.13
+            local width = 0.28
             local itemH = 0.038
 
-            -- Header
-            DrawRect(posX, posY, width, 0.075, 15, 23, 42, 245)
-            DrawRect(posX, posY + 0.037, width, 0.003, 234, 179, 8, 255) -- Gold Line
-            DrawTextRaw(HP1.Title, posX - 0.12, posY - 0.024, 0.52, 255, 255, 255, 255, 1)
+            -- Top Luxury Gold Bar
+            DrawRect(posX, posY - 0.040, width, 0.005, 234, 179, 8, 255)
 
-            -- Sub-Header
-            local subHeaderTitle = 'الأقسام الرئيسية (1,639 مركبة)'
-            if MenuUI.CurrentTab == 'tools' then subHeaderTitle = '🛠️ أدوات وخدمات المركبة'
+            -- Header Main Banner (Obsidian Black)
+            DrawRect(posX, posY, width, 0.075, 10, 14, 23, 248)
+            DrawRect(posX, posY + 0.037, width, 0.003, 234, 179, 8, 255) -- Gold Divider
+            DrawTextRaw(HP1.Title, posX - 0.13, posY - 0.026, 0.52, 255, 215, 0, 255, 1)
+            DrawTextRaw(HP1.SubTitle, posX - 0.13, posY + 0.008, 0.26, 148, 163, 184, 255, 4)
+
+            -- Sub-Header Tab Banner
+            local subHeaderTitle = 'MAIN SHOWROOM FLEET (1,639 VEHICLES)'
+            if MenuUI.CurrentTab == 'tools' then subHeaderTitle = '🛠️ QUICK VEHICLE UTILITIES & TUNING'
             elseif MenuUI.CurrentTab == 'category' then subHeaderTitle = HP1.Categories[MenuUI.CatIndex].title
             elseif MenuUI.CurrentTab == 'vehicles' then subHeaderTitle = HP1.Categories[MenuUI.CatIndex].subcategories[MenuUI.SubIndex].title
-            elseif MenuUI.CurrentTab == 'search' then subHeaderTitle = '🔍 نتائج البحث (' .. #MenuUI.SearchResults .. ')' end
+            elseif MenuUI.CurrentTab == 'search' then subHeaderTitle = '🔍 SEARCH RESULTS (' .. #MenuUI.SearchResults .. ' VEHICLES)' end
 
-            DrawRect(posX, posY + 0.052, width, 0.028, 30, 41, 59, 235)
-            DrawTextRaw(subHeaderTitle, posX - 0.12, posY + 0.040, 0.32, 234, 179, 8, 255, 4)
+            DrawRect(posX, posY + 0.054, width, 0.028, 20, 27, 45, 240)
+            DrawTextRaw(subHeaderTitle, posX - 0.13, posY + 0.042, 0.32, 234, 179, 8, 255, 4)
 
-            -- بناء العناصر النشطة
+            -- بناء قائمة العناصر
             local list = {}
             if MenuUI.CurrentTab == 'main' then
-                table.insert(list, { label = '🔍 بحث سريع عن سيارة...', action = 'search' })
-                table.insert(list, { label = '🛠️ أدوات وتصليح وتزويد المركبة', action = 'open_tools' })
+                table.insert(list, { label = '🔍 SEARCH ANY VEHICLE (بحث فوري)...', action = 'search' })
+                table.insert(list, { label = '🛠️ VEHICLE UTILITIES (أدوات وصيانة وتزويد)', action = 'open_tools' })
                 for idx, c in ipairs(HP1.Categories) do
                     local count = 0
                     for _, s in ipairs(c.subcategories) do count = count + s.count end
-                    table.insert(list, { label = c.title, badge = tostring(count), catIdx = idx, action = 'open_cat' })
+                    table.insert(list, { label = c.title, badge = tostring(count) .. ' CARS', catIdx = idx, action = 'open_cat' })
                 end
             elseif MenuUI.CurrentTab == 'tools' then
-                table.insert(list, { label = '🔧 تصليح المركبة بالكامل', fn = RepairVehicle })
-                table.insert(list, { label = '🧼 غسيل وتلميع البودي', fn = CleanVehicle })
-                table.insert(list, { label = '⛽ تعبئة خزان الوقود 100%', fn = function() SetVehicleFuelLevel(GetVehiclePedIsIn(PlayerPedId(), false), 100.0) Notify('~g~تم تعبئة الوقود 100% ⛽~s~') end })
-                table.insert(list, { label = '🔄 تعديل انقلاب المركبة (Flip)', fn = FlipVehicle })
-                table.insert(list, { label = '🚀 تزويد وترقية كاملة للأداء', fn = MaxTuneVehicle })
-                table.insert(list, { label = '⚡ دفعة سرعة فورية (Speed Boost)', fn = SpeedBoostVehicle })
-                table.insert(list, { label = '🗑️ حذف المركبة الحالية', fn = DeleteVehicleAction })
+                table.insert(list, { label = '🔧 [REPAIR] Full Vehicle Repair (100%)', fn = RepairVehicle })
+                table.insert(list, { label = '🧼 [WASH] Wash & Polish Body Detail', fn = CleanVehicle })
+                table.insert(list, { label = '⛽ [REFUEL] Max Fuel Tank (100%)', fn = function() SetVehicleFuelLevel(GetVehiclePedIsIn(PlayerPedId(), false), 100.0) Notify('~g~[HP1] FUEL TANK REFILLED 100% ⛽~s~') PlaySound('SELECT') end })
+                table.insert(list, { label = '🔄 [FLIP] Flip Vehicle Upright', fn = FlipVehicle })
+                table.insert(list, { label = '🚀 [TUNE] Max Engine & Turbo Tuning', fn = MaxTuneVehicle })
+                table.insert(list, { label = '⚡ [BOOST] Nitrous Speed Boost', fn = SpeedBoostVehicle })
+                table.insert(list, { label = '🗑️ [DELETE] Delete Current Vehicle', fn = DeleteVehicleAction })
             elseif MenuUI.CurrentTab == 'category' then
                 local cat = HP1.Categories[MenuUI.CatIndex]
                 for sIdx, sub in ipairs(cat.subcategories) do
-                    table.insert(list, { label = sub.title, badge = tostring(sub.count), subIdx = sIdx, action = 'open_sub' })
+                    table.insert(list, { label = sub.title, badge = tostring(sub.count) .. ' CARS', subIdx = sIdx, action = 'open_sub' })
                 end
             elseif MenuUI.CurrentTab == 'vehicles' then
                 local sub = HP1.Categories[MenuUI.CatIndex].subcategories[MenuUI.SubIndex]
                 for _, car in ipairs(sub.vehicles) do
-                    table.insert(list, { label = car.label, code = car.model, action = 'spawn', model = car.model })
+                    table.insert(list, { label = car.label, code = car.model:upper(), action = 'spawn', model = car.model })
                 end
             elseif MenuUI.CurrentTab == 'search' then
                 for _, car in ipairs(MenuUI.SearchResults) do
-                    table.insert(list, { label = car.label, code = car.model, action = 'spawn', model = car.model })
+                    table.insert(list, { label = car.label, code = car.model:upper(), action = 'spawn', model = car.model })
                 end
             end
 
@@ -3904,31 +3906,33 @@ CreateThread(function()
             local sStart = MenuUI.Scroll + 1
             local sEnd = math.min(total, MenuUI.Scroll + MenuUI.MaxVisible)
 
-            local curY = posY + 0.082
+            local curY = posY + 0.084
             for i = sStart, sEnd do
                 local item = list[i]
                 local isSel = (i == MenuUI.Selected)
 
                 if isSel then
-                    DrawRect(posX, curY, width, itemH, 234, 179, 8, 230) -- Gold Accent
-                    DrawTextRaw(item.label, posX - 0.12, curY - 0.015, 0.35, 15, 23, 42, 255, 4)
+                    -- Selected Gold Gradient Aesthetic
+                    DrawRect(posX, curY, width, itemH, 212, 175, 55, 235)
+                    DrawTextRaw(item.label, posX - 0.13, curY - 0.015, 0.35, 10, 14, 23, 255, 4)
                     if item.badge or item.code then
-                        DrawTextRaw(item.badge or ('[' .. item.code .. ']'), posX + 0.12, curY - 0.014, 0.30, 15, 23, 42, 255, 4, true)
+                        DrawTextRaw(item.badge or ('[' .. item.code .. ']'), posX + 0.13, curY - 0.014, 0.30, 10, 14, 23, 255, 4, true)
                     end
                 else
-                    DrawRect(posX, curY, width, itemH, 15, 23, 42, 205)
-                    DrawTextRaw(item.label, posX - 0.12, curY - 0.015, 0.35, 240, 240, 240, 245, 4)
+                    -- Normal Translucent Obsidian
+                    DrawRect(posX, curY, width, itemH, 13, 17, 28, 215)
+                    DrawTextRaw(item.label, posX - 0.13, curY - 0.015, 0.35, 240, 240, 240, 250, 4)
                     if item.badge or item.code then
-                        DrawTextRaw(item.badge or ('[' .. item.code .. ']'), posX + 0.12, curY - 0.014, 0.30, 148, 163, 184, 255, 4, true)
+                        DrawTextRaw(item.badge or ('[' .. item.code .. ']'), posX + 0.13, curY - 0.014, 0.30, 212, 175, 55, 255, 4, true)
                     end
                 end
                 curY = curY + itemH + 0.003
             end
 
-            -- Footer
-            DrawRect(posX, curY + 0.004, width, 0.024, 30, 41, 59, 235)
-            DrawTextRaw(tostring(MenuUI.Selected) .. ' / ' .. tostring(total), posX + 0.115, curY - 0.005, 0.28, 203, 213, 225, 255, 4, true)
-            DrawTextRaw('F6 / Backspace: رجوع | Enter: تنزيل', posX - 0.12, curY - 0.005, 0.28, 148, 163, 184, 255, 4)
+            -- Footer Status Banner
+            DrawRect(posX, curY + 0.005, width, 0.026, 20, 27, 45, 245)
+            DrawTextRaw(string.format('[ %02d / %02d ]', MenuUI.Selected, total), posX + 0.125, curY - 0.005, 0.28, 255, 215, 0, 255, 4, true)
+            DrawTextRaw('[ENTER] Deploy | [BACKSPACE] Back | [F6] Close', posX - 0.13, curY - 0.005, 0.28, 148, 163, 184, 255, 4)
 
             -- Keyboard Navigation Controls
             if IsControlJustPressed(0, 172) then -- UP
@@ -3984,11 +3988,11 @@ CreateThread(function()
     end
 end)
 
--- مراقبة زر الفتح F6 (Control 167) أو INSERT (Control 121)
+-- Keymapping & Hotkeys (F6 or INSERT)
 CreateThread(function()
     while true do
         Wait(0)
-        -- زر F6 = 167 | زر INSERT = 121
+        -- Control 167 = F6 | Control 121 = INSERT
         if IsControlJustPressed(0, 167) or IsDisabledControlJustPressed(0, 167) or IsControlJustPressed(0, 121) or IsDisabledControlJustPressed(0, 121) then
             MenuUI.Open = not MenuUI.Open
             if MenuUI.Open then
@@ -4001,7 +4005,6 @@ CreateThread(function()
     end
 end)
 
--- تسجيل أوامر الشات
 RegisterCommand('vmenu', function()
     MenuUI.Open = not MenuUI.Open
     if MenuUI.Open then
@@ -4020,4 +4023,4 @@ RegisterCommand('cars', function()
     ExecuteCommand('vmenu')
 end, false)
 
-Notify('~g~[HP1 Vehicle Menu]~w~ تم تفعيل منيو السيارات الفاخر! اضغط ~y~F6~w~ أو ~y~INSERT~w~ لفتح القائمة.')
+Notify('~g~[HP1 ROYAL SHOWROOM]~w~ ACTIVATED! PRESS ~y~F6~w~ OR ~y~INSERT~w~')
