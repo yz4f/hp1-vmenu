@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HP1 Royal Luxury Vehicle Showroom</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700;900&family=Montserrat:wght@400;500;600;700;800&family=Rajdhani:wght@600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div id="app" class="hidden">
+        <div class="backdrop" id="backdrop"></div>
+        
+        <div class="main-modal">
+            <!-- Top Header -->
+            <header class="luxury-header">
+                <div class="brand-section">
+                    <div class="crown-icon">👑</div>
+                    <div class="brand-text">
+                        <h1 class="brand-title">HP1 ROYAL SHOWROOM</h1>
+                        <p class="brand-subtitle">EXECUTIVE VEHICLE VAULT • 1,639 CURATED MOTOR MACHINES</p>
+                    </div>
+                </div>
+
+                <!-- Quick Vehicle Utilities Toolbar -->
+                <div class="quick-toolbar">
+                    <button class="tool-btn" data-action="repair" title="Repair & Fix Engine/Body">
+                        <span class="tool-icon">🔧</span>
+                        <span class="tool-label">REPAIR</span>
+                    </button>
+                    <button class="tool-btn" data-action="wash" title="Wash & Polish Vehicle">
+                        <span class="tool-icon">🧼</span>
+                        <span class="tool-label">WASH</span>
+                    </button>
+                    <button class="tool-btn" data-action="fuel" title="Refill Tank to 100%">
+                        <span class="tool-icon">⛽</span>
+                        <span class="tool-label">MAX FUEL</span>
+                    </button>
+                    <button class="tool-btn" data-action="flip" title="Flip Upright">
+                        <span class="tool-icon">🔄</span>
+                        <span class="tool-label">FLIP</span>
+                    </button>
+                    <button class="tool-btn" data-action="tune" title="Apply Max Performance Upgrades">
+                        <span class="tool-icon">🚀</span>
+                        <span class="tool-label">MAX TUNE</span>
+                    </button>
+                    <button class="tool-btn delete-btn" data-action="delete" title="Delete Current Vehicle">
+                        <span class="tool-icon">🗑️</span>
+                        <span class="tool-label">DELETE</span>
+                    </button>
+                </div>
+
+                <!-- Close Button -->
+                <button class="close-modal-btn" id="closeBtn" title="Close Menu (ESC)">
+                    <span class="esc-badge">ESC</span>
+                    <span class="close-x">✕</span>
+                </button>
+            </header>
+
+            <!-- Search and Filter Bar -->
+            <div class="search-filter-bar">
+                <div class="search-box">
+                    <span class="search-icon">🔍</span>
+                    <input type="text" id="searchInput" placeholder="Search 1,639 vehicles by name, model or code (e.g. Camry, Tahoe, G63, Charger, فتك, شاص)..." autocomplete="off" spellcheck="false">
+                    <button id="clearSearch" class="clear-search hidden">✕</button>
+                </div>
+                <div class="search-stats">
+                    <span id="vehiclesCountBadge" class="count-badge">1,639 VEHICLES READY</span>
+                </div>
+            </div>
+
+            <!-- Categories Navigation Bar -->
+            <nav class="categories-nav" id="categoriesNav">
+                <!-- Dynamically Populated by script.js -->
+            </nav>
+
+            <!-- Subcategories Chips Filter -->
+            <div class="subcategories-bar" id="subcategoriesBar">
+                <!-- Dynamically Populated by script.js -->
+            </div>
+
+            <!-- Vehicles Grid Showcase -->
+            <main class="vehicles-showcase" id="vehiclesGrid">
+                <!-- Dynamically Populated by script.js -->
+            </main>
+
+            <!-- Footer Status Bar -->
+            <footer class="luxury-footer">
+                <div class="footer-hint">
+                    <span class="key-pill">ESC</span> Close Menu &nbsp;•&nbsp; 
+                    <span class="key-pill">LEFT CLICK</span> Deploy Vehicle &nbsp;•&nbsp; 
+                    <span class="key-pill">F6 / INSERT</span> Toggle Window
+                </div>
+                <div class="footer-branding">
+                    HP1 EXECUTIVE LUXURY FLEET • VERSION 2.0 GOLD EDITION
+                </div>
+            </footer>
+        </div>
+
+        <!-- Floating Toast Notifications -->
+        <div id="toastContainer" class="toast-container"></div>
+    </div>
+
+    <!-- Vehicles Dataset -->
+    <script src="vehicles_data.js"></script>
+    <!-- Interactive UI Logic -->
+    <script src="script.js"></script>
+</body>
+</html>
